@@ -1,7 +1,7 @@
 package micro.examin.xml2woCsv;
 
 public class Measure {
-    public static final String ELEMENT_MEASURE = "/measure";
+    public static final String ELEMENT_MEASURE = "measure";
     private  String name;
     private  String expression;
     private  String aggregation;
