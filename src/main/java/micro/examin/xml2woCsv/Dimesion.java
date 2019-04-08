@@ -15,6 +15,6 @@ public class Dimesion {
 
     Dimesion(String name) {
         this.name = name;
-        this.measureFoldersInDimension = measureFoldersInDimension;
+
     }
 }

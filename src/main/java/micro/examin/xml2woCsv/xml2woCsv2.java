@@ -47,43 +47,20 @@ public class xml2woCsv2 {
         XPath xPath = XPathFactory.newInstance().newXPath();
         NodeList dimensionNodeList = (NodeList) xPath.compile(Dimesion.ELEMENT_DIMENSION).evaluate(doc, XPathConstants.NODESET);
 
-        for (int i = 0; i < 1;/*dimensionNodeList.getLength();*/ i++) {
+        //System.out.println("Dimension Arraylist size : " + dimensionNodeList.getLength() + "\n");
+        for (int i = 0; i < dimensionNodeList.getLength(); i++) {
             Dimesion currDimension = null;
             Node nNode = dimensionNodeList.item(i);
 
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element dimElement = (Element) nNode;
-                currDimension = new Dimesion(dimElement.getElementsByTagName("name").item(0).getTextContent());
-                System.out.println("Dimension : " + currDimension.name + "\n");
+
 
                 NodeList measureFolderNodeList = ((Element) nNode).getElementsByTagName("measureFolder");
 //                System.out.println("MeasurefolderSize : " + measureFolderNodeList.getLength());
-                for (int j = 0; j < measureFolderNodeList.getLength(); j++) {
-                    MeasureFolder currMeasureFolder = null;
-                    Node mfNode = measureFolderNodeList.item(j);
-                    if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
-                        Element mfelement = (Element) mfNode;
-                        System.out.println("\n MeasurefolderName : " + mfelement.getElementsByTagName("name").item(0).getTextContent());
 
-                        NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
-                        System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
-                        for (int k = 0; k < measuresNodeList.getLength(); k++) {
-                            MeasureFolder currMeasure = null;
-                            Node mNode = measuresNodeList.item(k);
-                            if (mNode.getNodeType() == Node.ELEMENT_NODE) {
-                                Element melement = (Element) mNode;
-                                System.out.println("Measure : " + melement.getElementsByTagName("name").item(0).getTextContent());
-
-
-                            }
-
-                        }
-
-
-                    }
-
-                }
-
+                currDimension = new Dimesion(dimElement.getElementsByTagName("name").item(0).getTextContent(), getMeasureFolderList(measureFolderNodeList));
+                System.out.println("Dimension : " + currDimension.name + "\n");
             }
             dimensionsList.add(currDimension);
 //            allMeasureFolders.add(getMeasureFolder(dimensionNodeList.item(i)));
@@ -92,9 +69,54 @@ public class xml2woCsv2 {
         return dimensionsList;
     }
 
-    private static MeasureFolder getMeasureFolder(Node item) {
+    private static ArrayList<MeasureFolder> getMeasureFolderList(NodeList measureFolderNodeList) {
+        ArrayList<MeasureFolder> meaureFolderArraysList = new ArrayList<>();
+        System.out.println("MeasurefolderSize : " + measureFolderNodeList.getLength());
 
 
-        return new MeasureFolder("name");
+        for (int j = 0; j < measureFolderNodeList.getLength(); j++) {
+            MeasureFolder currMeasureFolder = null;
+            Node mfNode = measureFolderNodeList.item(j);
+            if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element mfelement = (Element) mfNode;
+                NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
+
+
+                currMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
+                meaureFolderArraysList.add(currMeasureFolder);
+
+
+                System.out.println("\n MeasurefolderName : " + currMeasureFolder.name);
+                System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
+            }
+        }
+
+        return meaureFolderArraysList;
+    }
+
+    private static ArrayList<Measure> getMeasuresList(NodeList measuresNodeList) {
+        ArrayList<Measure> measureArrayList = new ArrayList<>();
+        for (int k = 0; k < measuresNodeList.getLength(); k++) {
+            Measure currMeasure = null;
+            Node mNode = measuresNodeList.item(k);
+            if (mNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element melement = (Element) mNode;
+                String name = melement.getElementsByTagName("name").item(0).getTextContent();
+                String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
+                try {
+                    String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
+                    currMeasure = new Measure(name, expression, aggregation);
+                } catch (Exception e) {
+                    e.getStackTrace();
+                    currMeasure = new Measure(name, expression);
+                }
+
+                // System.out.println("Measure : " + currMeasure.toString());
+
+            }
+            measureArrayList.add(currMeasure);
+
+        }
+        return measureArrayList;
     }
 }
