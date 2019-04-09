@@ -7,35 +7,27 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class xml2woCsv2 {
     static ArrayList<Dimesion> allDimensions;
-    static ArrayList<MeasureFolder> allMeasureFolders;
-    static ArrayList<Measure> allMeasures;
 
-    public static void main(String[] args) throws IOException, XMLStreamException {
+    public static void main(String[] args) {
         String xmlFilePath = ("/home/examin/Videos/model.xml");
-        XMLInputFactory factory = XMLInputFactory.newInstance();
 
-        try (BufferedReader bf = new BufferedReader(new FileReader(xmlFilePath))) {
+        try {
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document document = dBuilder.parse(new File(xmlFilePath));
             document.getDocumentElement().normalize();
             allDimensions = getAllDimensions(document);
-
+            System.out.println("dfd");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -60,7 +52,7 @@ public class xml2woCsv2 {
 //                System.out.println("MeasurefolderSize : " + measureFolderNodeList.getLength());
 
                 currDimension = new Dimesion(dimElement.getElementsByTagName("name").item(0).getTextContent(), getMeasureFolderList(measureFolderNodeList));
-                System.out.println("Dimension : " + currDimension.name + "\n");
+                // 1System.out.println("Dimension : " + currDimension.name + "\n");
             }
             dimensionsList.add(currDimension);
 //            allMeasureFolders.add(getMeasureFolder(dimensionNodeList.item(i)));
@@ -71,7 +63,7 @@ public class xml2woCsv2 {
 
     private static ArrayList<MeasureFolder> getMeasureFolderList(NodeList measureFolderNodeList) {
         ArrayList<MeasureFolder> meaureFolderArraysList = new ArrayList<>();
-        System.out.println("MeasurefolderSize : " + measureFolderNodeList.getLength());
+        //System.out.println("MeasurefolderSize : " + measureFolderNodeList.getLength());
 
 
         for (int j = 0; j < measureFolderNodeList.getLength(); j++) {
@@ -86,8 +78,8 @@ public class xml2woCsv2 {
                 meaureFolderArraysList.add(currMeasureFolder);
 
 
-                System.out.println("\n MeasurefolderName : " + currMeasureFolder.name);
-                System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
+                // 1System.out.println("\n MeasurefolderName : " + currMeasureFolder.name);
+                // 1System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
             }
         }
 
@@ -103,6 +95,7 @@ public class xml2woCsv2 {
                 Element melement = (Element) mNode;
                 String name = melement.getElementsByTagName("name").item(0).getTextContent();
                 String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
+
                 try {
                     String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
                     currMeasure = new Measure(name, expression, aggregation);
@@ -110,7 +103,6 @@ public class xml2woCsv2 {
                     e.getStackTrace();
                     currMeasure = new Measure(name, expression);
                 }
-
                 // System.out.println("Measure : " + currMeasure.toString());
 
             }
