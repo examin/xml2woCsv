@@ -1,20 +1,29 @@
 package micro.examin.xml2woCsv;
 
 
-import java.util.ArrayList;
-
 public class Dimesion {
-    public static final String ELEMENT_DIMENSION = "/project/namespace[1]/namespace[2]/namespace[2]/dimension";
-    String name;
-    ArrayList<MeasureFolder> measureFoldersInDimension;
+    static final String ELEMENT_DIMENSION = "/project/namespace[1]/namespace[2]/namespace[2]/dimension";
+    private String name;
+    private MeasureFolder measureFoldersInDimension;
 
-    Dimesion(String name, ArrayList<MeasureFolder> measureFoldersInDimension) {
+    Dimesion(String name, MeasureFolder measureFoldersInDimension) {
         this.name = name;
         this.measureFoldersInDimension = measureFoldersInDimension;
     }
 
-    Dimesion(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public MeasureFolder getMeasureFoldersInDimension() {
+        return measureFoldersInDimension;
+    }
+
+    public void setMeasureFoldersInDimension(MeasureFolder measureFoldersInDimension) {
+        this.measureFoldersInDimension = measureFoldersInDimension;
     }
 }
