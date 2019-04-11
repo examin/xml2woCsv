@@ -13,6 +13,8 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class xml2woCsv2 {
     static ArrayList<Dimesion> allDimensions;
@@ -61,52 +63,118 @@ public class xml2woCsv2 {
         return dimensionsList;
     }
 
-    private static ArrayList<MeasureFolder> getMeasureFolderList(NodeList measureFolderNodeList) {
-        ArrayList<MeasureFolder> meaureFolderArraysList = new ArrayList<>();
+    private static MeasureFolder getMeasureFolderList(NodeList measureFolderNodeList) {
         //System.out.println("MeasurefolderSize : " + measureFolderNodeList.getLength());
 
+        MeasureFolder firstMeasureFolder = new MeasureFolder("first", new HashMap<>());
+        HashMap<String,String> directMap =new HashMap();
+        MeasureFolder ndMeasureFolder = new MeasureFolder("rest", new HashMap<>());
+        MeasureFolder derivedMeasureFolder = new MeasureFolder("direct", new HashMap<>());
+        MeasureFolder restMeasureFolder = new MeasureFolder("rest", new HashMap<>());
 
-        for (int j = 0; j < measureFolderNodeList.getLength(); j++) {
-            MeasureFolder currMeasureFolder = null;
-            Node mfNode = measureFolderNodeList.item(j);
-            if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
-                Element mfelement = (Element) mfNode;
-                NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
-
-
-                currMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
-                meaureFolderArraysList.add(currMeasureFolder);
-
-
-                // 1System.out.println("\n MeasurefolderName : " + currMeasureFolder.name);
-                // 1System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
-            }
+        Node mfNode = measureFolderNodeList.item(3);
+        if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
+            NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
+            directMap = new HashMap<>(getFirstDirectMeasuresList(measuresNodeList));
+//            System.out.println("\n MeasurefolderName : " + ((Element) mfNode).getElementsByTagName("name").item(0).getTextContent());
+//            System.out.println("*Size : " + measuresNodeList.getLength());
         }
 
-        return meaureFolderArraysList;
+
+
+        mfNode = measureFolderNodeList.item(1);
+        if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
+            NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
+            ndMeasureFolder.measures.putAll(getMeasuresList(measuresNodeList,directMap));
+//            System.out.println("\n MeasurefolderName : " + ((Element) mfNode).getElementsByTagName("name").item(0).getTextContent());
+//            System.out.println("*Size : " + measuresNodeList.getLength());
+        }
+        mfNode = measureFolderNodeList.item(4);
+        if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
+            NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
+            ndMeasureFolder.measures.putAll(getMeasuresList(measuresNodeList,directMap));
+//            System.out.println("\n MeasurefolderName : " + ((Element) mfNode).getElementsByTagName("name").item(0).getTextContent());
+//            System.out.println("*Size : " + measuresNodeList.getLength());
+        }
+
+
+        mfNode = measureFolderNodeList.item(2);
+        if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
+            NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
+            derivedMeasureFolder.measures.putAll(getMeasuresList(measuresNodeList,directMap));
+//            System.out.println("\n MeasurefolderName : " + ((Element) mfNode).getElementsByTagName("name").item(0).getTextContent());
+//            System.out.println("*Size : " + measuresNodeList.getLength());
+        }
+
+
+//        mfNode = measureFolderNodeList.item(0);
+//        if (mfNode.getNodeType() == Node.ELEMENT_NODE) {
+//            NodeList measuresNodeList = ((Element) mfNode).getElementsByTagName("measure");
+//            firstMeasureFolder.measures = getMeasuresList(measuresNodeList,directMap,);
+//            System.out.println("\n MeasurefolderName : " + ((Element) mfNode).getElementsByTagName("name").item(0).getTextContent());
+//            System.out.println("*Size : " + measuresNodeList.getLength());
+//
+//        }
+
+
+        resolvedMeasures(restMeasureFolder, derivedMeasureFolder);
+        return ndMeasureFolder;
     }
 
-    private static ArrayList<Measure> getMeasuresList(NodeList measuresNodeList) {
-        ArrayList<Measure> measureArrayList = new ArrayList<>();
+    public static MeasureFolder resolvedMeasures(MeasureFolder restMeasureFolder, MeasureFolder derivedMeasureFolder) {
+
+        //triverse all derived and rest and put all derived
+
+        return new MeasureFolder("rest");
+    }
+
+    private static HashMap<String, Measure> getMeasuresList(NodeList measuresNodeList, HashMap directMap) {
+        HashMap<String, Measure> measureArrayList = new HashMap<>();
         for (int k = 0; k < measuresNodeList.getLength(); k++) {
-            Measure currMeasure = null;
+
             Node mNode = measuresNodeList.item(k);
             if (mNode.getNodeType() == Node.ELEMENT_NODE) {
+                Measure currMeasure;
                 Element melement = (Element) mNode;
                 String name = melement.getElementsByTagName("name").item(0).getTextContent();
                 String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
 
+
+
                 try {
                     String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
-                    currMeasure = new Measure(name, expression, aggregation);
+                    currMeasure = new Measure(name, expression, aggregation, directMap);
                 } catch (Exception e) {
                     e.getStackTrace();
-                    currMeasure = new Measure(name, expression);
+                    currMeasure = new Measure(name, expression, "none", directMap);
                 }
                 // System.out.println("Measure : " + currMeasure.toString());
-
+                measureArrayList.put(name, currMeasure);
             }
-            measureArrayList.add(currMeasure);
+
+        }
+        return measureArrayList;
+    }
+    private static HashMap getFirstDirectMeasuresList(NodeList measuresNodeList) {
+        HashMap<String, String> measureArrayList = new HashMap<>();
+        for (int k = 0; k < measuresNodeList.getLength(); k++) {
+
+            Node mNode = measuresNodeList.item(k);
+            if (mNode.getNodeType() == Node.ELEMENT_NODE) {
+                String finalExpression ="";
+                Element melement = (Element) mNode;
+                String name = melement.getElementsByTagName("name").item(0).getTextContent();
+                String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
+                try {
+                    String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
+                    finalExpression = aggregation+"("+expression+")";
+                } catch (Exception e) {
+                    e.getStackTrace();
+
+                }
+                // System.out.println("Measure : " + currMeasure.toString());
+                measureArrayList.put(name, finalExpression);
+            }
 
         }
         return measureArrayList;

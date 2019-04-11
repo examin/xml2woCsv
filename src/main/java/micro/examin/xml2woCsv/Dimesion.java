@@ -6,9 +6,9 @@ import java.util.ArrayList;
 public class Dimesion {
     public static final String ELEMENT_DIMENSION = "/project/namespace[1]/namespace[2]/namespace[2]/dimension";
     String name;
-    ArrayList<MeasureFolder> measureFoldersInDimension;
+    MeasureFolder measureFoldersInDimension;
 
-    Dimesion(String name, ArrayList<MeasureFolder> measureFoldersInDimension) {
+    Dimesion(String name, MeasureFolder measureFoldersInDimension) {
         this.name = name;
         this.measureFoldersInDimension = measureFoldersInDimension;
     }
