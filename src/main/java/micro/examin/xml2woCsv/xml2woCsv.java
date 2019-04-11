@@ -130,7 +130,7 @@ public class xml2woCsv {
             Set<String> resolvedKeys = resolvedMap.keySet();
             if(!allRef.isEmpty()) {
                 for (String replace : resolvedKeys) {
-                    expression = expression.replaceAll("["+replace+"]", resolvedMap.get(replace));
+                    expression = expression.replace("["+replace+"]", resolvedMap.get(replace));
                 }
                 numerator.put(curr, expression);
             }
@@ -145,7 +145,7 @@ public class xml2woCsv {
             Set<String> resolvedKeys = resolvedMap.keySet();
             if(!allRef.isEmpty()) {
                 for (String replace : resolvedKeys) {
-                    expression = expression.replaceAll("["+replace+"]",resolvedMap.get(replace));
+                    expression = expression.replace("["+replace+"]",resolvedMap.get(replace));
                 }
                 denomerator.put(curr, expression);
             }
@@ -155,7 +155,7 @@ public class xml2woCsv {
             String expression = derived.get(curr);
             HashSet<String> allRef =  getAlldependencies(expression);
             if(!allRef.isEmpty()) {
-                HashMap<String, String> resolvedMap = resolveNDRef(allRef, numerator, denomerator);
+                HashMap<String, String> resolvedMap = resolveNDRef(allRef, numerator, denomerator,directMeasures);
 
                 Set<String> resolvedKeys = resolvedMap.keySet();
                 for (String replace : resolvedKeys) {
@@ -167,9 +167,31 @@ public class xml2woCsv {
         }
         for(String curr: allNameIterator) {
             String expression = allName.get(curr);
+            if(curr.matches(".*Score Overrides.*")){
+                System.out.println("remove this");
+            }
             HashSet<String> allRef =  getAlldependencies(expression);
             if(!allRef.isEmpty()) {
-                HashMap<String, String> resolvedMap = resolveNameRef(allRef, numerator, denomerator, derived, directMeasures);
+                HashMap<String, String> resolvedMap = resolveDirectRef(allRef, directMeasures);
+
+                Set<String> resolvedKeys = resolvedMap.keySet();
+                for (String replace : resolvedKeys) {
+
+                        expression = expression.replace("["+replace+"]", resolvedMap.get(replace));
+
+                }
+                allName.put(curr, expression);
+            }
+
+        }
+        for(String curr: allNameIterator) {
+            String expression = allName.get(curr);
+            if(curr.matches(".*Score Overrides.*")){
+                System.out.println("remove this");
+            }
+            HashSet<String> allRef =  getAlldependencies(expression);
+            if(!allRef.isEmpty()) {
+                HashMap<String, String> resolvedMap = resolveNameRef(allRef, numerator, denomerator, derived);
 
                 Set<String> resolvedKeys = resolvedMap.keySet();
                 for (String replace : resolvedKeys) {
@@ -188,27 +210,31 @@ public class xml2woCsv {
         for(String curr :allRefInExp){
             if(direct.containsKey(curr)){
                 resolvedRef.put(curr,direct.get(curr));
+                //System.out.println("resolveDirectRef direct resolved "+curr+" \n* "+ direct.get(curr));
+
             }
         }
         return resolvedRef;
     }
-    private static HashMap resolveNameRef(HashSet<String> allRefInExp, HashMap<String, String> numerator, HashMap<String, String> denomerator,HashMap<String, String> derived , HashMap<String, String> direct) {
+    private static HashMap resolveNameRef(HashSet<String> allRefInExp, HashMap<String, String> numerator, HashMap<String, String> denomerator,HashMap<String, String> derived) {
         HashMap<String,String> resolvedRef =  new HashMap();
         for(String curr : allRefInExp){
             if(numerator.containsKey(curr)){
                 resolvedRef.put(curr,numerator.get(curr));
+//                System.out.println(" resolveNameRef numerator resolved "+curr+" \n* "+ numerator.get(curr));
             }
             else {
                 if(denomerator.containsKey(curr)){
                     resolvedRef.put(curr,denomerator.get(curr));
+//                   System.out.println(" resolveNameRef deno resolved "+curr+" \n* "+ denomerator.get(curr));
+
                 }
                 else
                 {
                     if(derived.containsKey(curr)){
                         resolvedRef.put(curr,derived.get(curr));
-                    }
-                    else if(direct.containsKey(curr)){
-                        resolvedRef.put(curr,direct.get(curr));
+//                        System.out.println("resolveNameRef drived resolved "+curr+" \n* "+ derived.get(curr));
+
                     }
                 }
 
@@ -216,16 +242,28 @@ public class xml2woCsv {
         }
         return resolvedRef;
     }
-    private static HashMap resolveNDRef(HashSet<String> allRefInExp, HashMap<String, String> numerator, HashMap<String, String> denomerator) {
+    private static HashMap resolveNDRef(HashSet<String> allRefInExp, HashMap<String, String> numerator, HashMap<String, String> denomerator ,  HashMap<String, String> direct) {
         HashMap<String,String> resolvedRef =  new HashMap();
         for(String curr :allRefInExp){
             if(numerator.containsKey(curr)){
                 resolvedRef.put(curr,numerator.get(curr));
+                //System.out.println("resolveNDRef( numerator resolved "+curr+" \n* "+ numerator.get(curr));
+
             }
             else {
                 if(denomerator.containsKey(curr)){
                     resolvedRef.put(curr,denomerator.get(curr));
+//                    System.out.println("resolveNDRef( deno resolved "+curr+" \n* "+ denomerator.get(curr));
+
+
                 }
+                else
+                    if (direct.containsKey(curr)){
+                        resolvedRef.put(curr,direct.get(curr));
+//                    System.out.println("resolveNDRef( deno resolved "+curr+" \n* "+ denomerator.get(curr));
+
+
+                    }
             }
         }
         return resolvedRef;
