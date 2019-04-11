@@ -16,13 +16,13 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class xml2woCsv {
     public static void main(String[] args) throws IOException, XMLStreamException {
@@ -60,12 +60,11 @@ public class xml2woCsv {
                 String currDimensionName = dimElement.getElementsByTagName("name").item(0).getTextContent();
                 currDimension = new Dimesion(currDimensionName, getMeasureFolder(measureFolderNodeList));
                 System.out.println("Dimension : " + currDimension.getName() + "\n");
-                createExcel(currDimension.getMeasureFoldersInDimension().getMeasures(), currDimensionName);
-            }
+                }
             dimensionsList.add(currDimension);
 //            allMeasureFolders.add(getMeasureFolder(dimensionNodeList.item(i)));
         }
-
+        createExcel(dimensionsList);
         return dimensionsList;
     }
 
@@ -73,7 +72,6 @@ public class xml2woCsv {
         MeasureFolder allNameMeasureFolder = null;
         MeasureFolder nuMeasureFolder = null;
         MeasureFolder denMeasureFolder = null;
-        MeasureFolder resolvedMeasureFolder = null;
         MeasureFolder directMeasureFolder = null;
         MeasureFolder derivedMeasureFolder = null;
 
@@ -87,74 +85,168 @@ public class xml2woCsv {
                 switch (j) {
                     case 0:
                         allNameMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
-                        System.out.println("\n MeasurefolderName : " + allNameMeasureFolder.getName());
+//                        System.out.println("\n MeasurefolderName : " + allNameMeasureFolder.getName());
                         System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
                         break;
                     case 2:
                         derivedMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
-                        System.out.println("\n MeasurefolderName : " + derivedMeasureFolder.getName());
-                        System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
                         break;
                     case 3:
                         directMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
-                        System.out.println("\n MeasurefolderName : " + directMeasureFolder.getName());
-                        System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
                         break;
                     case 4:
                         nuMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
-                        System.out.println("\n MeasurefolderName : " + nuMeasureFolder.getName());
-                        System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
                         break;
                     case 1:
                         denMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
-                        System.out.println("\n MeasurefolderName : " + denMeasureFolder.getName());
-                        System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
-                }
+                        }
 
             }
         }
 
-        usingDirectResolve1(directMeasureFolder.getMeasures(), nuMeasureFolder, denMeasureFolder, derivedMeasureFolder);
+        usingDirectResolve1(directMeasureFolder.getMeasures(), nuMeasureFolder, denMeasureFolder, derivedMeasureFolder,allNameMeasureFolder);
+
         //todo : resolve for firstmeasurefolder and resturn it
-        return directMeasureFolder;
+        return allNameMeasureFolder;
     }
 
-    private static void usingDirectResolve1(HashMap directMeasures, MeasureFolder numMeasureFolder, MeasureFolder denMeasureFolder, MeasureFolder derivedMeasureFolder) {
+    private static void usingDirectResolve1(HashMap directMeasures, MeasureFolder numMeasureFolder, MeasureFolder denMeasureFolder, MeasureFolder derivedMeasureFolder, MeasureFolder allNameMeasureFolder) {
         //traverse num and deno
         HashMap<String, String> numerator = numMeasureFolder.getMeasures();
         HashMap<String, String> denomerator = denMeasureFolder.getMeasures();
         HashMap<String, String> derived = derivedMeasureFolder.getMeasures();
+        HashMap<String, String> allName = allNameMeasureFolder.getMeasures();
+
         Set<String> numIterator = numerator.keySet();
         Set<String> denoIterator = denomerator.keySet();
         Set<String> derivedIterator = derived.keySet();
-//        for(String curr: numIterator) {
-//            String expression = numerator.get(curr);
-//            HashMap <String ,String> resolvedMap = getAlldependencies(expression);
-//            Set<String> resolvedKeys = resolvedMap.keySet();
-//            for(String replace :resolvedKeys){
-//                expression.replaceAll(replace,resolvedMap.get(replace));
-//            }
-//
-//        }
-//        for(String curr: denoIterator) {
-//            String expression = denomerator.get(curr);
-//            HashMap<String, String> resolved = getAlldependencies(expression);
-//            //todo: ""complete for num deno and also for derived then thin mof first
-//        }
-//        for(String curr: numIterator) {
-//            String expression = numerator.get(curr);
-//            HashMap <String ,String> resolvedMap = getAlldependencies(expression);
-//            Set<String> resolvedKeys = resolvedMap.keySet();
-//            for(String replace :resolvedKeys){
-//                expression.replaceAll(replace,resolvedMap.get(replace));
-//            }
-//
-//        }
+        Set<String> allNameIterator = allName.keySet();
+
+        for(String curr: numIterator) {
+            String expression = numerator.get(curr);
+            HashSet<String> allRef =  getAlldependencies(expression);
+            HashMap <String ,String> resolvedMap  = resolveDirectRef(allRef,directMeasures);
+
+            Set<String> resolvedKeys = resolvedMap.keySet();
+            if(!allRef.isEmpty()) {
+                for (String replace : resolvedKeys) {
+                    expression = expression.replaceAll("["+replace+"]", resolvedMap.get(replace));
+                }
+                numerator.put(curr, expression);
+            }
+
+
+        }
+        for(String curr: denoIterator) {
+            String expression = denomerator.get(curr);
+            HashSet<String> allRef =  getAlldependencies(expression);
+            HashMap <String ,String> resolvedMap  = resolveDirectRef(allRef,directMeasures);
+
+            Set<String> resolvedKeys = resolvedMap.keySet();
+            if(!allRef.isEmpty()) {
+                for (String replace : resolvedKeys) {
+                    expression = expression.replaceAll("["+replace+"]",resolvedMap.get(replace));
+                }
+                denomerator.put(curr, expression);
+            }
+            //todo: ""complete for num deno and also for derived then thin mof first
+        }
+        for(String curr: derivedIterator) {
+            String expression = derived.get(curr);
+            HashSet<String> allRef =  getAlldependencies(expression);
+            if(!allRef.isEmpty()) {
+                HashMap<String, String> resolvedMap = resolveNDRef(allRef, numerator, denomerator);
+
+                Set<String> resolvedKeys = resolvedMap.keySet();
+                for (String replace : resolvedKeys) {
+                    expression = expression.replace("["+replace+"]", resolvedMap.get(replace));
+                }
+                derived.put(curr, expression);
+            }
+
+        }
+        for(String curr: allNameIterator) {
+            String expression = allName.get(curr);
+            HashSet<String> allRef =  getAlldependencies(expression);
+            if(!allRef.isEmpty()) {
+                HashMap<String, String> resolvedMap = resolveNameRef(allRef, numerator, denomerator, derived, directMeasures);
+
+                Set<String> resolvedKeys = resolvedMap.keySet();
+                for (String replace : resolvedKeys) {
+                    expression = expression.replace("["+replace+"]", resolvedMap.get(replace));
+                }
+                allName.put(curr, expression);
+            }
+
+        }
+
+       // System.out.println("remove this ");
 
     }
+        private static HashMap resolveDirectRef(HashSet<String> allRefInExp, HashMap<String, String> direct) {
+        HashMap<String,String> resolvedRef =  new HashMap();
+        for(String curr :allRefInExp){
+            if(direct.containsKey(curr)){
+                resolvedRef.put(curr,direct.get(curr));
+            }
+        }
+        return resolvedRef;
+    }
+    private static HashMap resolveNameRef(HashSet<String> allRefInExp, HashMap<String, String> numerator, HashMap<String, String> denomerator,HashMap<String, String> derived , HashMap<String, String> direct) {
+        HashMap<String,String> resolvedRef =  new HashMap();
+        for(String curr : allRefInExp){
+            if(numerator.containsKey(curr)){
+                resolvedRef.put(curr,numerator.get(curr));
+            }
+            else {
+                if(denomerator.containsKey(curr)){
+                    resolvedRef.put(curr,denomerator.get(curr));
+                }
+                else
+                {
+                    if(derived.containsKey(curr)){
+                        resolvedRef.put(curr,derived.get(curr));
+                    }
+                    else if(direct.containsKey(curr)){
+                        resolvedRef.put(curr,direct.get(curr));
+                    }
+                }
 
-    private static HashMap<String, String> getAlldependencies(String expression) {
-        return null;
+            }
+        }
+        return resolvedRef;
+    }
+    private static HashMap resolveNDRef(HashSet<String> allRefInExp, HashMap<String, String> numerator, HashMap<String, String> denomerator) {
+        HashMap<String,String> resolvedRef =  new HashMap();
+        for(String curr :allRefInExp){
+            if(numerator.containsKey(curr)){
+                resolvedRef.put(curr,numerator.get(curr));
+            }
+            else {
+                if(denomerator.containsKey(curr)){
+                    resolvedRef.put(curr,denomerator.get(curr));
+                }
+            }
+        }
+        return resolvedRef;
+    }
+
+    private static String preProcessExpression(String expression) {
+        expression = expression.replaceAll("((\\[MEASURES\\]\\.)[^\\]]*]\\.)", " ");
+        expression = expression.replaceAll("\\[PHYSICAL_LAYER\\]\\.[^\\]]*]\\.\\[(.*?(?=\\]))]", " $1 ");
+        expression = expression.replaceAll("(?<=\\d)(?=[a-zA-Z])", " ");
+        return expression.trim();
+    }
+
+    private static HashSet<String> getAlldependencies(String expression) {
+        HashSet <String> allRef = new HashSet<>();
+        final Pattern pattern = Pattern.compile("(?<=\\[).*?(?=\\])", Pattern.MULTILINE);
+        final Matcher matcher = pattern.matcher(expression);
+
+        while (matcher.find()) {
+            allRef.add(matcher.group(0).trim());
+        }
+        return allRef;
     }
 
     private static HashMap<String, String> getMeasuresList(NodeList measuresNodeList) {
@@ -165,6 +257,8 @@ public class xml2woCsv {
                 Element melement = (Element) mNode;
                 String name = melement.getElementsByTagName("name").item(0).getTextContent();
                 String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
+
+                expression = preProcessExpression(expression);
                 try {
                     String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
                     expression = aggregation + " ( " + expression + " ) ";
@@ -185,26 +279,41 @@ public class xml2woCsv {
 
     }
 
-    private static void createExcel(HashMap<String, String> map, String name) {
+    private static void createExcel(ArrayList<Dimesion>  allDimesions){
+
         String excelFileName = "/home/examin/Videos/Axslogic.xlsx";
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        Boolean firstTime =true;
+        for(Dimesion currDimension: allDimesions ) {
 
-        try {
-            XSSFWorkbook workbook = new XSSFWorkbook();
+            String workBookname =currDimension.getName();
+            if(!firstTime) {
+                try {
+                    workbook = new XSSFWorkbook(new FileInputStream(excelFileName));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                firstTime =false;
 
-            //XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(excelFileName));
-
-            XSSFSheet sheet = workbook.createSheet(name);
-            int rowNum = 0;
-            Set<String> directKeys = map.keySet();
-            for (String curr : directKeys) {
-                Row row = sheet.createRow(rowNum++);
-                Cell cell1 = row.createCell(0);
-                cell1.setCellValue(curr);
-
-                Cell cell2 = row.createCell(1);
-                cell2.setCellValue(map.get(curr));
             }
-            FileOutputStream outputStream = new FileOutputStream(excelFileName);
+            XSSFSheet sheet = workbook.createSheet(workBookname);
+                int rowNum = 0;
+                Set<String> directKeys = currDimension.getMeasureFoldersInDimension().getMeasures().keySet();
+                for (String curr : directKeys) {
+                    Row row = sheet.createRow(rowNum++);
+                    Cell cell1 = row.createCell(0);
+                    cell1.setCellValue(curr);
+
+                    Cell cell2 = row.createCell(1);
+                    cell2.setCellValue(currDimension.getMeasureFoldersInDimension().getMeasures().get(curr));
+                }
+
+
+            System.out.println("Done");
+
+        }
+
+        try{FileOutputStream outputStream = new FileOutputStream(excelFileName);
             workbook.write(outputStream);
             workbook.close();
         } catch (FileNotFoundException e) {
@@ -212,8 +321,5 @@ public class xml2woCsv {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("Done");
-
     }
 }
