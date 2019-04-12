@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adb04252-80eb-42e0-96c2-446ef803e3a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Dimesion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Dimesion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Measure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/MeasureFolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/MeasureFolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java" afterDir="false" />
     </list>
@@ -68,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="262" column="25" selection-start-line="188" selection-start-column="26" selection-end-line="262" selection-end-column="25" />
+            <state relative-caret-position="75">
+              <caret line="86" column="151" selection-start-line="86" selection-start-column="151" selection-end-line="86" selection-end-column="151" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#10582#10656#1" />
@@ -114,6 +105,7 @@
       <find>resolveNDRef(</find>
       <find>derived</find>
       <find>derivedIter</find>
+      <find>agg</find>
     </findStrings>
     <replaceStrings>
       <replace>dependSet</replace>
@@ -196,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554988547349" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555060250752" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -278,7 +270,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34781000" />
+    <option name="totallyTimeSpent" value="36718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="768" extended-state="6" />
@@ -297,13 +289,13 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43962848" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35448918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42724457" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32956383" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -376,13 +368,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java</url>
-          <line>170</line>
+          <line>201</line>
           <properties />
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java</url>
-          <line>189</line>
+          <line>220</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
@@ -484,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="262" column="25" selection-start-line="188" selection-start-column="26" selection-end-line="262" selection-end-column="25" />
+        <state relative-caret-position="75">
+          <caret line="86" column="151" selection-start-line="86" selection-start-column="151" selection-end-line="86" selection-end-column="151" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#10582#10656#1" />

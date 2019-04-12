@@ -84,7 +84,7 @@ public class xml2woCsv {
 
                 switch (j) {
                     case 0:
-                        allNameMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresList(measuresNodeList));
+                        allNameMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresListNoAgg(measuresNodeList));
 //                        System.out.println("\n MeasurefolderName : " + allNameMeasureFolder.getName());
                         System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
                         break;
@@ -110,7 +110,7 @@ public class xml2woCsv {
         return allNameMeasureFolder;
     }
 
-    private static void usingDirectResolve1(HashMap directMeasures, MeasureFolder numMeasureFolder, MeasureFolder denMeasureFolder, MeasureFolder derivedMeasureFolder, MeasureFolder allNameMeasureFolder) {
+    private static void usingDirectResolve1(HashMap<String,String> directMeasures, MeasureFolder numMeasureFolder, MeasureFolder denMeasureFolder, MeasureFolder derivedMeasureFolder, MeasureFolder allNameMeasureFolder) {
         //traverse num and deno
         HashMap<String, String> numerator = numMeasureFolder.getMeasures();
         HashMap<String, String> denomerator = denMeasureFolder.getMeasures();
@@ -121,6 +121,23 @@ public class xml2woCsv {
         Set<String> denoIterator = denomerator.keySet();
         Set<String> derivedIterator = derived.keySet();
         Set<String> allNameIterator = allName.keySet();
+        Set<String> directIterator = directMeasures.keySet();
+
+        for(String curr: directIterator) {
+            String expression = directMeasures.get(curr);
+            HashSet<String> allRef =  getAlldependencies(expression);
+            HashMap <String ,String> resolvedMap  = resolveDirectRef(allRef,directMeasures);
+
+            Set<String> resolvedKeys = resolvedMap.keySet();
+            if(!allRef.isEmpty()) {
+                for (String replace : resolvedKeys) {
+                    expression = expression.replace("["+replace+"]", resolvedMap.get(replace));
+                }
+                directMeasures.put(curr, expression);
+            }
+
+
+        }
 
         for(String curr: numIterator) {
             String expression = numerator.get(curr);
@@ -156,6 +173,20 @@ public class xml2woCsv {
             HashSet<String> allRef =  getAlldependencies(expression);
             if(!allRef.isEmpty()) {
                 HashMap<String, String> resolvedMap = resolveNDRef(allRef, numerator, denomerator,directMeasures);
+
+                Set<String> resolvedKeys = resolvedMap.keySet();
+                for (String replace : resolvedKeys) {
+                    expression = expression.replace("["+replace+"]", resolvedMap.get(replace));
+                }
+                derived.put(curr, expression);
+            }
+
+        }
+        for(String curr: derivedIterator) {
+            String expression = derived.get(curr);
+            HashSet<String> allRef =  getAlldependencies(expression);
+            if(!allRef.isEmpty()) {
+                HashMap<String, String> resolvedMap = resolveDirectRef(allRef,derived);
 
                 Set<String> resolvedKeys = resolvedMap.keySet();
                 for (String replace : resolvedKeys) {
@@ -300,8 +331,32 @@ public class xml2woCsv {
                 try {
                     String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
                     expression = aggregation + " ( " + expression + " ) ";
+                    measureList.put(name, expression);
+                } catch (Exception e) {
+                    e.getStackTrace();
+                    measureList.put(name, expression);
+                }
 
-                    //todo : fix [measures] and [primary] and space after them
+                // System.out.println("Measure : " + currMeasure.toString());
+
+            }
+
+        }
+        return measureList;
+
+    }
+    private static HashMap<String, String> getMeasuresListNoAgg(NodeList measuresNodeList) {
+        HashMap<String, String> measureList = new HashMap<>();
+        for (int k = 0; k < measuresNodeList.getLength(); k++) {
+            Node mNode = measuresNodeList.item(k);
+            if (mNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element melement = (Element) mNode;
+                String name = melement.getElementsByTagName("name").item(0).getTextContent();
+                String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
+
+                expression = preProcessExpression(expression);
+                try {
+                    String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
                     measureList.put(name, expression);
                 } catch (Exception e) {
                     e.getStackTrace();
