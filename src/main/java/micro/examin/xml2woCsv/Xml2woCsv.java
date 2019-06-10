@@ -2,6 +2,7 @@ package micro.examin.xml2woCsv;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.w3c.dom.Document;
@@ -17,16 +18,17 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class xml2woCsv {
+import static org.junit.Assert.assertNotNull;
+
+public class Xml2woCsv {
+    public static SortedSet<String> microMeasureCondition = new TreeSet<>();
+
     public static void main(String[] args) throws IOException, XMLStreamException {
-        String xmlFilePath = ("/home/examin/Videos/model.xml");
+        String xmlFilePath = ("/home/examin/Videos/new/model.xml");
         try {
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -34,6 +36,7 @@ public class xml2woCsv {
             Document document = dBuilder.parse(new File(xmlFilePath));
             document.getDocumentElement().normalize();
             getAllDimensions(document);
+            System.out.println(microMeasureCondition.toString());
 
 
         } catch (Exception e) {
@@ -46,7 +49,7 @@ public class xml2woCsv {
         XPath xPath = XPathFactory.newInstance().newXPath();
         NodeList dimensionNodeList = (NodeList) xPath.compile(Dimesion.ELEMENT_DIMENSION).evaluate(doc, XPathConstants.NODESET);
 
-        //System.out.println("Dimension Arraylist size : " + dimensionNodeList.getLength() + "\n");
+//      System.out.println("Dimension Arraylist size : " + dimensionNodeList.getLength() + "\n");
         for (int i = 0; i < dimensionNodeList.getLength(); i++) {
             Dimesion currDimension = null;
             Node nNode = dimensionNodeList.item(i);
@@ -61,11 +64,54 @@ public class xml2woCsv {
                 currDimension = new Dimesion(currDimensionName, getMeasureFolder(measureFolderNodeList));
                 System.out.println("Dimension : " + currDimension.getName() + "\n");
             }
+            processForElastic(currDimension);
             dimensionsList.add(currDimension);
+
 //            allMeasureFolders.add(getMeasureFolder(dimensionNodeList.item(i)));
         }
         createExcel(dimensionsList);
         return dimensionsList;
+    }
+
+    private static void processForElastic(Dimesion currDimension) {
+        HashMap<String, String> measures = currDimension.getMeasureFoldersInDimension().getMeasures();
+        HashSet<String> itr = new HashSet<>(measures.keySet());
+        for (String measure : itr) {
+            String measureValue = (measures.get(measure))
+                    .replace("IF", "if")
+                    .replaceAll(" END", "").trim()
+                    .replaceAll(" AND ", " && ")
+                    .replaceAll(" OR ", "||")
+                    .replaceAll("(0)", "0")
+                    .replaceAll("  ", " ")
+                    .replaceAll("   ", " ")
+                    .replaceAll("  ", " ")
+                    .replaceAll("   ", " ")
+                    .replaceAll("CASE WHEN", "if ( ")
+                    .replaceAll(" THEN ", " ) return ")
+                    .replaceAll("else 0", "else {return 0}")
+                    .replaceAll("ELSE 0", "else {return 0}")
+                    .replaceAll("ELSE ( 0 )", "else {return 0}")
+                    .replaceAll("ELSE NULL", "else { return 0 }")
+                    .replaceAll("END", "")
+                    .replace("*", " * ")
+                    .replace("/", " / ")
+                    .replace("(", " ( ")
+                    .replace("{", " } ")
+                    .replace("}", " } ")
+                    .replace(")", " ) ")
+                    .replace("=", " = ")
+                    // .replaceAll("if \\(.?\\((.+?)\\)\\)","if ( $1 )")
+                    .replaceAll("  ", " ")
+                    .replaceAll("   ", " ")
+                    .replaceAll("  ", " ")
+                    .replaceAll("   ", " ")
+                    .replaceAll("average", "`average")
+                    .replaceAll("sum", "`sum")
+                    .replaceAll("count", "`count");
+            measures.put(measure, measureValue);
+            System.out.println(measureValue);
+        }
     }
 
     private static MeasureFolder getMeasureFolder(NodeList measureFolderNodeList) {
@@ -85,7 +131,7 @@ public class xml2woCsv {
                 switch (j) {
                     case 0:
                         allNameMeasureFolder = new MeasureFolder(mfelement.getElementsByTagName("name").item(0).getTextContent(), getMeasuresListNoAgg(measuresNodeList));
-//                        System.out.println("\n MeasurefolderName : " + allNameMeasureFolder.getName());
+                        System.out.println("\n MeasurefolderName : " + allNameMeasureFolder.getName());
                         System.out.println("MeasurefolderSize : " + measuresNodeList.getLength());
                         break;
                     case 2:
@@ -106,7 +152,24 @@ public class xml2woCsv {
 
         usingDirectResolve1(directMeasureFolder.getMeasures(), nuMeasureFolder, denMeasureFolder, derivedMeasureFolder, allNameMeasureFolder);
 
-        //todo : resolve for firstmeasurefolder and resturn it
+        //todo : resolve for firstmeasurefolder and return it
+        Set<String> measureValues = new HashSet<>(allNameMeasureFolder.getMeasures().values());
+        int index = 1;
+        Iterator itr = measureValues.iterator();
+        while (itr.hasNext()) {
+            String curr = itr.next().toString();
+            System.out.printf("%s\n", curr);
+
+            Pattern pattern = Pattern.compile("(\\w+)\\s?(=|!=|>|<|>=|<=)\\s?(\\w+)|(\\w+)\\s(in|any|not in|between|not between|like)\\s?(\\w+)", Pattern.MULTILINE);
+            Matcher matcher = pattern.matcher(curr);
+
+            while (matcher.find()) {
+                //use this to print measureconditions\n  System.out.println(matcher.group(0));
+                microMeasureCondition.add(matcher.group(0));
+
+            }
+        }
+
         return allNameMeasureFolder;
     }
 
@@ -135,8 +198,6 @@ public class xml2woCsv {
                 }
                 directMeasures.put(curr, expression);
             }
-
-
         }
 
         for (String curr : numIterator) {
@@ -151,8 +212,6 @@ public class xml2woCsv {
                 }
                 numerator.put(curr, expression);
             }
-
-
         }
         for (String curr : denoIterator) {
             String expression = denomerator.get(curr);
@@ -295,7 +354,8 @@ public class xml2woCsv {
         expression = expression.replaceAll("((\\[MEASURES\\]\\.)[^\\]]*]\\.)", " ");
         //https://regex101.com/r/qysWh5/1
         expression = expression.replaceAll("\\[PHYSICAL_LAYER\\]\\.[^\\]]*]\\.\\[(.*?(?=\\]))]", " $1 ");
-        expression = expression.replaceAll("(?<=\\d)(?=[a-zA-Z])", " ");
+        //expression = expression.replaceAll("(?<=\\d)(?=[a-zA-Z])", " ").replaceAll("\\s+"," ");
+        expression = expression.replaceAll("(=|!=|>|<|>=|<=)", " $0 ").replaceAll("\\s+", " ");
         return expression.trim();
     }
 
@@ -319,10 +379,25 @@ public class xml2woCsv {
                 String name = melement.getElementsByTagName("name").item(0).getTextContent();
                 String expression = melement.getElementsByTagName("expression").item(0).getTextContent();
 
-                expression = preProcessExpression(expression);
+                expression = preProcessExpression(expression).trim();
                 try {
                     String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
-                    expression = aggregation + " ( " + expression + " ) ";
+                    System.out.println("***" + aggregation);
+                    if (!aggregation.contains("calculat")) {
+                        if (expression.startsWith("(")) {
+                            expression = aggregation + expression;
+                        } else {
+                            expression = aggregation + " ( " + expression + " ) ";
+                        }
+                    } else {
+                        if (expression.startsWith("(")) {
+                            try {
+                                expression = expression.replaceAll("\\((.*)\\)", "$1");
+                            } catch (Exception e) {
+                            }
+                        }
+                    }
+                    System.out.println("***" + expression);
                     measureList.put(name, expression);
                 } catch (Exception e) {
                     e.getStackTrace();
@@ -350,7 +425,7 @@ public class xml2woCsv {
                 expression = preProcessExpression(expression);
                 try {
                     String aggregation = melement.getElementsByTagName("regularAggregate").item(0).getTextContent();
-                    measureList.put(name, expression);
+                    measureList.put(name, expression.replace("\n", "").replace("\r", ""));
                 } catch (Exception e) {
                     e.getStackTrace();
                     measureList.put(name, expression);
@@ -367,31 +442,39 @@ public class xml2woCsv {
 
     private static void createExcel(ArrayList<Dimesion> allDimesions) {
 
-        String excelFileName = "/home/examin/Videos/Axslogic.xlsx";
-        XSSFWorkbook workbook = new XSSFWorkbook();
-        Boolean firstTime = true;
+        String excelFileName = "/home/examin/Videos/new3/ELASTICv2.xlsx";
+        File file = new File(excelFileName);
+        XSSFWorkbook workbook = null;
+        if (file.exists()) {
+            try {
+                workbook = (XSSFWorkbook) WorkbookFactory.create(new FileInputStream(file));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            workbook = new XSSFWorkbook();
+        }
         for (Dimesion currDimension : allDimesions) {
 
             String workBookname = currDimension.getName();
-            if (!firstTime) {
-                try {
-                    workbook = new XSSFWorkbook(new FileInputStream(excelFileName));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                firstTime = false;
-
-            }
             XSSFSheet sheet = workbook.createSheet(workBookname);
+            assertNotNull(workbook);
             int rowNum = 0;
             Set<String> directKeys = currDimension.getMeasureFoldersInDimension().getMeasures().keySet();
             for (String curr : directKeys) {
                 Row row = sheet.createRow(rowNum++);
-                Cell cell1 = row.createCell(0);
+                Cell cell1 = row.createCell(1);
                 cell1.setCellValue(curr);
+                String measureValue = currDimension.getMeasureFoldersInDimension().getMeasures().get(curr);
+                String[] microMeasures = measureValue.split("`");
+                int numOfMicro = microMeasures.length;
+                for (int i = 0; i < numOfMicro; i++) {
+                    Row row2 = sheet.createRow(rowNum++);
+                    Cell cell3 = row2.createCell(2);
 
-                Cell cell2 = row.createCell(1);
-                cell2.setCellValue(currDimension.getMeasureFoldersInDimension().getMeasures().get(curr));
+                    cell3.setCellValue(microMeasures[i]);
+                }
+
             }
 
 
