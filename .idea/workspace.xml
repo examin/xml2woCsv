@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adb04252-80eb-42e0-96c2-446ef803e3a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/xml2woCsv.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/xml2woCsv_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Dimesion.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Measure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/MeasureFolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -28,8 +41,34 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:h2:mem:TestDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:h2:mem:TestDB" type="feb32156:DbDataSourceImpl" />
+        <item name="TESTDB: database" type="2aa06773:H2ImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:h2:mem:TestDB" type="feb32156:DbDataSourceImpl" />
+        <item name="TESTDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:h2:mem:TestDB" type="feb32156:DbDataSourceImpl" />
+        <item name="TESTDB: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+        <item name="MEASUREAGGREGATIONFUNCTION: table" type="818c1b4a:H2ImplModel$Table" />
+      </path>
+    </expand>
     <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -41,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding>
                 <element signature="e#315#316#0" expanded="true" />
                 <element signature="e#342#343#0" expanded="true" />
@@ -58,13 +97,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="295" column="8" lean-forward="true" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="489" column="79" selection-start-line="489" selection-start-column="79" selection-end-line="489" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10582#10656#1" />
+                <element signature="e#5434#5443#0" expanded="true" />
+                <element signature="e#6673#6674#0" expanded="true" />
+                <element signature="e#6715#6716#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="52" column="40" selection-start-line="10" selection-start-column="16" selection-end-line="52" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3500#3501#0" expanded="true" />
+                <element signature="e#3542#3543#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -90,27 +145,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mfNoe</find>
-      <find>EOP ENR NET FLOW RATE (7 TO 8)</find>
-      <find>manupulate</find>
-      <find>eldes</find>
-      <find>directMeasures</find>
-      <find>preProcessExpression</find>
-      <find>trim</find>
-      <find>repla</find>
-      <find>replaceAll</find>
-      <find>Amount Booked</find>
-      <find>RESOLVED</find>
-      <find>Amount Booked To Total Credit Exposure</find>
-      <find>resolveNDRef(</find>
-      <find>derived</find>
-      <find>derivedIter</find>
-      <find>agg</find>
-      <find>remove</find>
-      <find>replace</find>
+      <find>out.print</find>
+      <find>sum</find>
+      <find>system.out.pr</find>
+      <find>system.out.prin</find>
+      <find>system.out.</find>
+      <find>measures</find>
+      <find>xpath</find>
+      <find>aggregation</find>
+      <find>AGGRE</find>
+      <find>axslogic</find>
+      <find>avera</find>
+      <find>} else</find>
+      <find>els</find>
+      <find>elastic</find>
+      <find>new3</find>
+      <find>.replace(</find>
+      <find>&lt; =</find>
+      <find>ELSE</find>
+      <find>***</find>
+      <find>**</find>
+      <find>Not Balanced</find>
+      <find>Not</find>
+      <find>org N</find>
+      <find>org</find>
+      <find>system.</find>
+      <find>MeasurefolderName</find>
+      <find>new N</find>
+      <find>new Not</find>
+      <find>new</find>
+      <find>start</find>
     </findStrings>
     <replaceStrings>
       <replace>dependSet</replace>
+      <replace>.replace(</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -126,6 +194,8 @@
         <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv2.java" />
         <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java" />
+        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" />
       </list>
     </option>
   </component>
@@ -136,9 +206,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="124" />
-    <option name="width" value="915" />
-    <option name="height" value="499" />
+    <option name="width" value="1024" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -146,15 +215,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xml2woCsv" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555061567495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558350229029" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -175,9 +283,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.xml2woCsv">
-    <configuration name="xml2woCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.xml2woCsv" />
+  <component name="RunManager" selected="Application.Xml2woCsv">
+    <configuration name="Ideone (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sport.Ideone" />
+      <module name="xml2woCsv_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ideone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.Ideone" />
+      <module name="xml2woCsv_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="micro.examin.xml2woCsv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Xml2woCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.Xml2woCsv" />
       <module name="xml2woCsv_main" />
       <extension name="coverage">
         <pattern>
@@ -202,13 +336,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="xml2woCsv [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.xml2woCsv" />
+      <item itemvalue="Application.Xml2woCsv" />
       <item itemvalue="Application.xml2woCsv2" />
+      <item itemvalue="Application.Ideone" />
+      <item itemvalue="Application.Ideone (1)" />
+      <item itemvalue="Gradle.xml2woCsv [dependencies]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.xml2woCsv" />
+        <item itemvalue="Application.Xml2woCsv" />
+        <item itemvalue="Application.Ideone (1)" />
+        <item itemvalue="Application.Ideone" />
+        <item itemvalue="Gradle.xml2woCsv [dependencies]" />
         <item itemvalue="Application.xml2woCsv2" />
       </list>
     </recent_temporary>
@@ -224,6 +383,17 @@
       <option name="presentableId" value="Default" />
       <updated>1554457336914</updated>
       <workItem from="1554457343141" duration="10518000" />
+      <workItem from="1555481725888" duration="17064000" />
+      <workItem from="1555936224982" duration="268000" />
+      <workItem from="1556179207171" duration="525000" />
+      <workItem from="1557985562181" duration="120000" />
+      <workItem from="1558331092924" duration="6428000" />
+      <workItem from="1558341964947" duration="1795000" />
+      <workItem from="1558430827347" duration="999000" />
+      <workItem from="1560146325650" duration="1448000" />
+      <workItem from="1560168470988" duration="30229000" />
+      <workItem from="1560318426134" duration="1864000" />
+      <workItem from="1560321148672" duration="6090000" />
     </task>
     <task id="LOCAL-00001" summary="some error not able to file all references">
       <created>1554981400271</created>
@@ -232,17 +402,30 @@
       <option name="project" value="LOCAL" />
       <updated>1554981400271</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="done some elastic optimization">
+      <created>1560180367931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560180367931</updated>
+    </task>
+    <task id="LOCAL-00003" summary="done some elastic optimization">
+      <created>1560180753137</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560180753137</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38073000" />
+    <option name="totallyTimeSpent" value="105579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21792261" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22912423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -255,19 +438,21 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35448918" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.47213623" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37306502" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42724457" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26625386" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2647059" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32956383" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32662538" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="13" />
       <window_info anchor="bottom" id="Console" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -275,14 +460,15 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32930514" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.16496944" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Maven" order="10" weight="0.3299389" />
       <window_info anchor="right" id="Codota" order="11" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.3299389" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1623867" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22199592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -295,19 +481,21 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26332796" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.58513933" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34055728" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42724457" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19547658" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32972136" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32662538" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="13" />
       <window_info anchor="bottom" id="Console" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -315,7 +503,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32930514" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.16496944" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Maven" order="10" weight="0.3299389" />
@@ -327,47 +515,48 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some error not able to file all references" />
-    <option name="LAST_COMMIT_MESSAGE" value="some error not able to file all references" />
+    <MESSAGE value="done some elastic optimization" />
+    <MESSAGE value="Check for already present of agg in org string insted of blindly adding agg to each" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check for already present of agg in org string insted of blindly adding agg to each" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((TransformerImpl)xform)._accessExternalDTD" custom="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/xml2woCsv$Xml2woCsv.ic" NAME="Xml2woCsv Coverage Results" MODIFIED="1560319559622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>micro.examin.xml2woCsv.*</FILTER>
+    </SUITE>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/javax/xml/stream/XMLInputFactory.java" />
     <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/io/BufferedReader.java" />
     <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/io/Reader.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/org/w3c/dom/Element.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Measure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Measure.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv2.java" />
     <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/LinkedHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -382,23 +571,6 @@
           <folding>
             <element signature="e#19327#19328#0" expanded="true" />
             <element signature="e#19410#19411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,13 +596,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java">
+    <entry file="das://a8a0f1f9-faa6-43c0-b253-d8102b9b7104/database/TESTDB/schema/PUBLIC/table/MEASUREAGGREGATIONFUNCTION">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/4.1.0/d8eb515844076b61da41758ae8d5a75eeb770398/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/ooxml/POIXMLDocumentPart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="295" column="8" lean-forward="true" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+        <state relative-caret-position="15">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/4.1.0/d8eb515844076b61da41758ae8d5a75eeb770398/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/SortedMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/4.1.0/d8eb515844076b61da41758ae8d5a75eeb770398/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xssf/usermodel/XSSFSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/jre/lib/rt.jar!/jdk/xml/internal/JdkXmlFeatures.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#2509#2510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="168" column="19" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/com/sun/jmx/snmp/ThreadContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="308" column="32" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="52" column="40" selection-start-line="10" selection-start-column="16" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10582#10656#1" />
+            <element signature="e#3500#3501#0" expanded="true" />
+            <element signature="e#3542#3543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="489" column="79" selection-start-line="489" selection-start-column="79" selection-end-line="489" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5434#5443#0" expanded="true" />
+            <element signature="e#6673#6674#0" expanded="true" />
+            <element signature="e#6715#6716#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,6 +743,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
