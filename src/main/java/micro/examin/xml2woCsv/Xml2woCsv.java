@@ -27,10 +27,12 @@ import static org.junit.Assert.assertNotNull;
 public class Xml2woCsv {
 	public static SortedSet<String> microMeasureCondition = new TreeSet<>();
 	private static HashMap<String, String> microMeasure = new HashMap<>();
+	private static HashMap<String, String> microMeasureLink = new HashMap<>();
+	private static HashMap<String, String> microMeasureAgg = new HashMap<>();
 	private static int miroMapIndex = 0;
 
 	public static void main(String[] args) throws IOException, XMLStreamException {
-		String xmlFilePath = ("/home/examin/Videos/new/model.xml");
+		String xmlFilePath = ("/home/examin/Videos/cognoModel/model_MK.xml");
 		try {
 
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -103,7 +105,7 @@ public class Xml2woCsv {
 					.replace("IF", "if")
 					.replaceAll(" END", "").trim()
 					.replaceAll(" AND ", " && ")
-					.replaceAll(" OR ", "||")
+					.replaceAll(" OR ", " || ")
 					.replace("(0)", "0")
 					.replaceAll("  ", " ")
 					.replaceAll("   ", " ")
@@ -507,7 +509,6 @@ public class Xml2woCsv {
 					e.getStackTrace();
 					measureList.put(name, expression);
 				}
-
 				// System.out.println("Measure : " + currMeasure.toString());
 
 			}
@@ -546,7 +547,7 @@ public class Xml2woCsv {
 
 	private static void createExcel(ArrayList<Dimesion> allDimesions) {
 
-		String excelFileName = "/home/examin/Videos/new4/ELASTICv4.xlsx";
+		String excelFileName = "/home/examin/Videos/MK Measure/ELASTICv7.xlsx";
 		File file = new File(excelFileName);
 		XSSFWorkbook workbook = null;
 		if (file.exists()) {
@@ -594,7 +595,7 @@ public class Xml2woCsv {
 					int endIndex = matchAgg.end();
 					String agg = matchAgg.group(0);
 					String restStr = str.substring(endIndex);
-					String getWithThisOrgAgg = getAggString(str, restStr, startIndex, endIndex, agg);
+					String getWithThisOrgAgg = getAggString(str, restStr, startIndex, endIndex, agg,curr);
 					str = getWithThisOrgAgg;
 					matchAgg = Pattern.compile(regex, Pattern.MULTILINE).matcher(str);
 				}
@@ -619,7 +620,7 @@ public class Xml2woCsv {
 		}
 	}
 
-	public static String getAggString(String org, String exp, int startIndex, int endIndex, String agg) {
+	public static String getAggString(String org, String exp, int startIndex, int endIndex, String agg, String meaureLinked) {
 		exp = exp.trim();
 		Stack<Integer> stk = new Stack<Integer>();
 		//System.out.println("Parenthesis Matching Test\n");
@@ -644,20 +645,28 @@ public class Xml2woCsv {
 		}
 		String aggFull = exp.substring(0, aggEndInd + 1);
 		if (microMeasure.getOrDefault(aggFull, "false").equals("false")) {
-			if (!Pattern.compile("(sum|count|average)").matcher(aggFull).find())
-				microMeasure.put(aggFull, "MSR" + (miroMapIndex++));
+			if (!Pattern.compile("(sum|count|average)").matcher(aggFull).find()) {
+				miroMapIndex++;
+				if(miroMapIndex == 302){
+					System.out.println("wait");
+				}
+				microMeasure.put(aggFull, "MSR" + (miroMapIndex));
+				microMeasureLink.put("MSR" + (miroMapIndex),meaureLinked);
+				microMeasureAgg.put("MSR" + (miroMapIndex),agg);
+			}
+
 		}
 		// update org
 		String firstPart = org.substring(0, startIndex);
 		String secondPart = exp.substring(aggEndInd + 1);
-		String orgTor = (firstPart + " " + agg.toUpperCase() + " " + microMeasure.getOrDefault(aggFull.trim(), aggFull) + " " + secondPart)
+		String orgTor = (firstPart + " " + microMeasure.getOrDefault(aggFull.trim(), aggFull) + " " + secondPart)
 				.replaceAll("\\s+", " ")
 				.replaceAll("\\s+", " ");
 		return orgTor;
 	}
 
 	private static void createExcelMicroMeasure() {
-		String excelFileName = "/home/examin/Videos/new5/Micro_ELASTIC.xlsx";
+		String excelFileName = "/home/examin/Videos/MK Measure/MicroV7.xlsx";
 		File file = new File(excelFileName);
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet();
@@ -671,6 +680,14 @@ public class Xml2woCsv {
 			Cell cell2 = row.createCell(0);
 			String str = microMeasure.get(curr);
 			cell2.setCellValue(str);
+
+			Cell cell3 = row.createCell(2);
+			String str3 = microMeasureLink.get(str);
+			cell3.setCellValue(str3);
+
+			Cell cell4 = row.createCell(2);
+			String str4 = microMeasureAgg.get(str);
+			cell4.setCellValue(str4);
 		}
 		try {
 			FileOutputStream outputStream = new FileOutputStream(excelFileName);
