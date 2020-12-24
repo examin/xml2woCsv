@@ -1,30 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="adb04252-80eb-42e0-96c2-446ef803e3a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/xml2woCsv.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java" afterDir="false" />
+    <list default="true" id="adb04252-80eb-42e0-96c2-446ef803e3a0" name="Default Changelist" comment="Check for already present of agg in org string insted of blindly adding agg to each">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/de_siegmar_fastcsv_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/CSVSNFJOINER/CSVSNFJOINER.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/AxsLogic_Temp/commonUtils/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/ColumnNameExtractStoredScript.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Leetcode/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Leetcode/shift2dGrid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/RenameFileJava.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter.g4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Actual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Alert_desc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AtCoder/b158/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AtCoder/b158/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/RollTry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/RollTry2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/RollTry3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/RollTry4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/SnfFilesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/SnfJoiner12Feb/SnfFilesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/SnfJoiner12Feb/SnowFlakeCSVJoiner3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/SnowFlake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/SnowFlakeCSVJoiner3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/Xml2woCsv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/commonUtils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/elasticStoredFromFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/BackTracking/QueenChess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Budget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/ColumnNameExtractStoredScript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/ConvertWordMinOper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/KnapSack1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/LongestComSubseq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/LongestDecSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/LongestIncSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/LongestPalindromicSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/MatrixMultiplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/MultiStageGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/NbitNonConseZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/PartitionProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/PerfectHillSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/StringBreak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_04/SubsetSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_13/All1Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_13/ConSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_13/MaxSumIncSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/DP_BABU/DP_13/MaxSumSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/GetJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Later/LargestSumTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/All1Sqare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/All1Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/BackSlashString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Balanced01String.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/BinarySearchRotated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Catalan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/CloneGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ContiniousSubArraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/CountIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/CourseSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/EditDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Expressions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/GenValidParenthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/HackerRank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/HackerRank2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/HackerRank3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Hackerrank9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/InOrder2BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/JUMP1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/JUMP2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/JumpGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/KPartSubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/KcharApartStr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/KnightTour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/LFUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/LRU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/LongestIncreasingSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/LongestNonRepSubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/LongestincPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/MatrixMinPath1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/MaxSubArray2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/MaxSumArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/MinCostClimbingStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/MinCostPassTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/MinFallingPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/NTMaxProfit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/NextMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/OnesAndZeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/PartitonArrayEqualSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ProdEceptSelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ProductNotIncludeThis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/RangeBitwizeAnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ReplaceOfStr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/RightSideViewTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/RootenOrange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/SerialTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ShiftString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ShortestPalindrone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Soduko.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/StarParenthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/StoneSmash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/SubArraySumK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/SurroundedReigon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Try.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/ValBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Ways2Climb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/WordBreak2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/XorPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/XorTries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/XorTries2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/XorTries3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/XorTriesEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/mazeValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/minPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/shift2dGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/subsetDivk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/BuySellCoolDown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/CoinChange2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/DiceRoll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/FuelStations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/KPartSumEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/KnapSackC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/LastStoneWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/LongestCommonSubSeq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/PerfectSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/PutEnvelopInside.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/SumRangeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/TargetSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/UniqPath2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/a_StairsClimb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/c_CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/ca_TrainTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/dungeonGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/petrolStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/LeetcodeDP/twoKeyPad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/RenameJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TreeOrGraph/Tree/DFS/PreOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/BalancedTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/OtherProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Sudoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Tushar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/codeforce/ideone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/karumachi/LinkedList/DoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xml2woCsv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xml2woCsv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/xml2woCsv_main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Dimesion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/Measure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/MeasureFolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/micro/examin/xml2woCsv/xml2woCsv2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/Dimesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/Ideone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/MeasureFolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,229 +237,123 @@
     </expand>
     <select />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="489" column="79" selection-start-line="489" selection-start-column="79" selection-end-line="489" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5434#5443#0" expanded="true" />
-                <element signature="e#6673#6674#0" expanded="true" />
-                <element signature="e#6715#6716#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="52" column="40" selection-start-line="10" selection-start-column="16" selection-end-line="52" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3500#3501#0" expanded="true" />
-                <element signature="e#3542#3543#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="xml2woCsv" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="xml2woCsv" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="xml2woCsv" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="xml2woCsv" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>out.print</find>
-      <find>sum</find>
-      <find>system.out.pr</find>
-      <find>system.out.prin</find>
-      <find>system.out.</find>
-      <find>measures</find>
-      <find>xpath</find>
-      <find>aggregation</find>
-      <find>AGGRE</find>
-      <find>axslogic</find>
-      <find>avera</find>
-      <find>} else</find>
-      <find>els</find>
-      <find>elastic</find>
-      <find>new3</find>
-      <find>.replace(</find>
-      <find>&lt; =</find>
-      <find>ELSE</find>
-      <find>***</find>
-      <find>**</find>
-      <find>Not Balanced</find>
-      <find>Not</find>
-      <find>org N</find>
-      <find>org</find>
-      <find>system.</find>
-      <find>MeasurefolderName</find>
-      <find>new N</find>
-      <find>new Not</find>
-      <find>new</find>
-      <find>start</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>dependSet</replace>
-      <replace>.replace(</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/Dimesion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xml2woCsv.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Measure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1UmZEoFaiHkCjnTg6ZIDdaTavif" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1024" />
-    <option name="height" value="768" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xml2woCsv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xml2woCsv" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xml2woCsv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path" value="$USER_HOME$/Downloads" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558350229029" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="packageLocal" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8.0_222" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3643678" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="micro.examin.xml2woCsv.Leetcode" />
+      <recent name="micro.examin.xml2woCsv.AxsLogic_Temp.commonUtils" />
+      <recent name="micro.examin.xml2woCsv.AxsLogic_Temp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/AxsLogic_Temp/SnfJoiner12Feb" />
+      <recent name="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Snf2JanWorking" />
+      <recent name="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/QueryServiceTest" />
+      <recent name="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/snfjoin" />
+      <recent name="$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/CodeGen" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Xml2woCsv">
-    <configuration name="Ideone (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sport.Ideone" />
-      <module name="xml2woCsv_main" />
+  <component name="RunManager" selected="Application.TestClass">
+    <configuration name="GFG (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.Try.GFG" />
+      <module name="xml2woCsv.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sport.*" />
+          <option name="PATTERN" value="micro.examin.xml2woCsv.Try.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,22 +361,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ideone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.Ideone" />
-      <module name="xml2woCsv_main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="micro.examin.xml2woCsv.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GFG" />
+      <module name="xml2woCsv.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Xml2woCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.Xml2woCsv" />
-      <module name="xml2woCsv_main" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.Solution" />
+      <module name="xml2woCsv.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="micro.examin.xml2woCsv.*" />
@@ -323,9 +381,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="xml2woCsv2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.xml2woCsv2" />
-      <module name="xml2woCsv_main" />
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <module name="xml2woCsv.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDummy1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="micro.examin.xml2woCsv.TestDummy1" />
+      <module name="xml2woCsv.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="micro.examin.xml2woCsv.*" />
@@ -336,42 +401,265 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="xml2woCsv [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A - Angry Students" type="Task" factoryName="Task">
+      <taskConf />
+      <method v="2">
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+        <option name="MakeProject" enabled="false" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Xml2woCsv" />
-      <item itemvalue="Application.xml2woCsv2" />
-      <item itemvalue="Application.Ideone" />
-      <item itemvalue="Application.Ideone (1)" />
-      <item itemvalue="Gradle.xml2woCsv [dependencies]" />
+      <item itemvalue="Application.TestDummy1" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.GFG" />
+      <item itemvalue="Application.GFG (1)" />
+      <item itemvalue="Task.A - Angry Students" />
+      <item itemvalue="Application.TestClass" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Xml2woCsv" />
-        <item itemvalue="Application.Ideone (1)" />
-        <item itemvalue="Application.Ideone" />
-        <item itemvalue="Gradle.xml2woCsv [dependencies]" />
-        <item itemvalue="Application.xml2woCsv2" />
+        <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.GFG (1)" />
+        <item itemvalue="Application.GFG" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.TestDummy1" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -394,6 +682,295 @@
       <workItem from="1560168470988" duration="30229000" />
       <workItem from="1560318426134" duration="1864000" />
       <workItem from="1560321148672" duration="6090000" />
+      <workItem from="1575963623160" duration="15891000" />
+      <workItem from="1576066647317" duration="761000" />
+      <workItem from="1576129088103" duration="16216000" />
+      <workItem from="1576750341418" duration="3113000" />
+      <workItem from="1577024793470" duration="3101000" />
+      <workItem from="1577251006756" duration="10502000" />
+      <workItem from="1577547283434" duration="19000" />
+      <workItem from="1577547327222" duration="29003000" />
+      <workItem from="1577868803411" duration="10181000" />
+      <workItem from="1577956917729" duration="26035000" />
+      <workItem from="1578143388863" duration="9923000" />
+      <workItem from="1578378672717" duration="10144000" />
+      <workItem from="1578897329013" duration="18465000" />
+      <workItem from="1579247353999" duration="2682000" />
+      <workItem from="1579336613224" duration="2548000" />
+      <workItem from="1579371622195" duration="75000" />
+      <workItem from="1579420507079" duration="292000" />
+      <workItem from="1579438986794" duration="7499000" />
+      <workItem from="1579500625887" duration="10712000" />
+      <workItem from="1579963550699" duration="4877000" />
+      <workItem from="1580015964714" duration="17107000" />
+      <workItem from="1580185307667" duration="10064000" />
+      <workItem from="1580218220170" duration="541000" />
+      <workItem from="1580224046329" duration="18462000" />
+      <workItem from="1580360808615" duration="14371000" />
+      <workItem from="1580440631797" duration="797000" />
+      <workItem from="1580462989676" duration="1618000" />
+      <workItem from="1580468270899" duration="920000" />
+      <workItem from="1580469219294" duration="56000" />
+      <workItem from="1580469305271" duration="153000" />
+      <workItem from="1580469489185" duration="819000" />
+      <workItem from="1580474504926" duration="93000" />
+      <workItem from="1580535816225" duration="6433000" />
+      <workItem from="1580545976014" duration="4852000" />
+      <workItem from="1580575618904" duration="26000" />
+      <workItem from="1580575674152" duration="14642000" />
+      <workItem from="1580705003654" duration="5668000" />
+      <workItem from="1581135828644" duration="16455000" />
+      <workItem from="1581574383748" duration="453000" />
+      <workItem from="1581576049151" duration="665000" />
+      <workItem from="1581577809183" duration="2000" />
+      <workItem from="1581577846501" duration="1208000" />
+      <workItem from="1581582585689" duration="3491000" />
+      <workItem from="1582016859467" duration="2895000" />
+      <workItem from="1583303426486" duration="1141000" />
+      <workItem from="1583558758370" duration="6027000" />
+      <workItem from="1583640879996" duration="5620000" />
+      <workItem from="1583678860732" duration="1671000" />
+      <workItem from="1583753596858" duration="5343000" />
+      <workItem from="1583775135634" duration="1790000" />
+      <workItem from="1583821083565" duration="4576000" />
+      <workItem from="1583860763322" duration="2668000" />
+      <workItem from="1584737819582" duration="1332000" />
+      <workItem from="1584766512641" duration="14000" />
+      <workItem from="1585223719612" duration="393000" />
+      <workItem from="1585227608640" duration="230000" />
+      <workItem from="1585232502854" duration="8334000" />
+      <workItem from="1585321275634" duration="1199000" />
+      <workItem from="1585370820180" duration="12192000" />
+      <workItem from="1585831578722" duration="1968000" />
+      <workItem from="1585979130173" duration="11218000" />
+      <workItem from="1586148795149" duration="5459000" />
+      <workItem from="1586354391538" duration="41000" />
+      <workItem from="1586354462385" duration="688000" />
+      <workItem from="1586355174482" duration="13426000" />
+      <workItem from="1586940622082" duration="3615000" />
+      <workItem from="1587054862477" duration="10225000" />
+      <workItem from="1587183193295" duration="7020000" />
+      <workItem from="1587209783170" duration="6749000" />
+      <workItem from="1587232396116" duration="1548000" />
+      <workItem from="1587234540972" duration="1781000" />
+      <workItem from="1587266513779" duration="2449000" />
+      <workItem from="1587286807707" duration="14719000" />
+      <workItem from="1587320883409" duration="3116000" />
+      <workItem from="1587352384912" duration="5036000" />
+      <workItem from="1587361095855" duration="1646000" />
+      <workItem from="1587382823376" duration="2276000" />
+      <workItem from="1587473773452" duration="5328000" />
+      <workItem from="1587534201783" duration="13195000" />
+      <workItem from="1587626490008" duration="1527000" />
+      <workItem from="1587786536696" duration="41357000" />
+      <workItem from="1588229007565" duration="2173000" />
+      <workItem from="1588249361940" duration="524000" />
+      <workItem from="1588344797370" duration="607000" />
+      <workItem from="1588394393768" duration="4519000" />
+      <workItem from="1588660235327" duration="1841000" />
+      <workItem from="1590040194149" duration="1828000" />
+      <workItem from="1590410185453" duration="1964000" />
+      <workItem from="1590556170716" duration="6271000" />
+      <workItem from="1590730554344" duration="115000" />
+      <workItem from="1590817703741" duration="16897000" />
+      <workItem from="1591015689994" duration="3476000" />
+      <workItem from="1591074840841" duration="592000" />
+      <workItem from="1591152686606" duration="5628000" />
+      <workItem from="1591353231908" duration="604000" />
+      <workItem from="1591511669077" duration="4567000" />
+      <workItem from="1591592737419" duration="44000" />
+      <workItem from="1591715165726" duration="1326000" />
+      <workItem from="1591763533979" duration="30000" />
+      <workItem from="1592467609085" duration="1497000" />
+      <workItem from="1592551606703" duration="308000" />
+      <workItem from="1592564914811" duration="1869000" />
+      <workItem from="1592571893984" duration="1220000" />
+      <workItem from="1592640409855" duration="235000" />
+      <workItem from="1592800306005" duration="2513000" />
+      <workItem from="1593335215100" duration="3134000" />
+      <workItem from="1594309310051" duration="1056000" />
+      <workItem from="1594316350719" duration="3553000" />
+      <workItem from="1594469647485" duration="3120000" />
+      <workItem from="1594534584887" duration="5274000" />
+      <workItem from="1594566336013" duration="18058000" />
+      <workItem from="1594823849384" duration="1854000" />
+      <workItem from="1594874212006" duration="9714000" />
+      <workItem from="1594967581116" duration="1992000" />
+      <workItem from="1595235705446" duration="8811000" />
+      <workItem from="1595304548564" duration="7322000" />
+      <workItem from="1595325323397" duration="1200000" />
+      <workItem from="1595408205092" duration="4229000" />
+      <workItem from="1595506593779" duration="2267000" />
+      <workItem from="1595569260192" duration="1658000" />
+      <workItem from="1595822320162" duration="59000" />
+      <workItem from="1595826396095" duration="1247000" />
+      <workItem from="1596105605046" duration="2862000" />
+      <workItem from="1596533810355" duration="3919000" />
+      <workItem from="1596606542402" duration="617000" />
+      <workItem from="1596614989013" duration="282000" />
+      <workItem from="1596785342874" duration="5360000" />
+      <workItem from="1597036871211" duration="45000" />
+      <workItem from="1597036926558" duration="927000" />
+      <workItem from="1597045599493" duration="29000" />
+      <workItem from="1597047504595" duration="76000" />
+      <workItem from="1597172656043" duration="1748000" />
+      <workItem from="1597208785208" duration="2583000" />
+      <workItem from="1597232956946" duration="2869000" />
+      <workItem from="1597298572023" duration="172000" />
+      <workItem from="1597327026983" duration="6616000" />
+      <workItem from="1597379535572" duration="604000" />
+      <workItem from="1597382630856" duration="1814000" />
+      <workItem from="1597560792199" duration="4010000" />
+      <workItem from="1597634929432" duration="6709000" />
+      <workItem from="1597648090254" duration="4946000" />
+      <workItem from="1597741182007" duration="1204000" />
+      <workItem from="1597754624178" duration="1842000" />
+      <workItem from="1597809696439" duration="2447000" />
+      <workItem from="1597845625611" duration="962000" />
+      <workItem from="1597896664673" duration="2549000" />
+      <workItem from="1597989406858" duration="190000" />
+      <workItem from="1598001111100" duration="2268000" />
+      <workItem from="1598026980372" duration="2561000" />
+      <workItem from="1598072847449" duration="2685000" />
+      <workItem from="1598098863239" duration="11884000" />
+      <workItem from="1598169959476" duration="2732000" />
+      <workItem from="1598205645174" duration="1944000" />
+      <workItem from="1598250074383" duration="6225000" />
+      <workItem from="1598268414468" duration="336000" />
+      <workItem from="1598336414535" duration="7245000" />
+      <workItem from="1598361360628" duration="1686000" />
+      <workItem from="1598416787061" duration="140000" />
+      <workItem from="1598424501547" duration="1276000" />
+      <workItem from="1598499333304" duration="8065000" />
+      <workItem from="1598589875739" duration="5650000" />
+      <workItem from="1598613615398" duration="1545000" />
+      <workItem from="1598670059936" duration="1814000" />
+      <workItem from="1598672682282" duration="136000" />
+      <workItem from="1598672844272" duration="918000" />
+      <workItem from="1598711047251" duration="622000" />
+      <workItem from="1598711757361" duration="116000" />
+      <workItem from="1598844960372" duration="6242000" />
+      <workItem from="1598880093080" duration="709000" />
+      <workItem from="1598888587544" duration="1406000" />
+      <workItem from="1598932285025" duration="471000" />
+      <workItem from="1598934004687" duration="1895000" />
+      <workItem from="1598978877507" duration="1728000" />
+      <workItem from="1599016357171" duration="10000" />
+      <workItem from="1599028313669" duration="2246000" />
+      <workItem from="1599031067090" duration="13000" />
+      <workItem from="1599061844839" duration="1201000" />
+      <workItem from="1599108454216" duration="1768000" />
+      <workItem from="1599117951658" duration="1588000" />
+      <workItem from="1599200417506" duration="4055000" />
+      <workItem from="1599219070704" duration="1906000" />
+      <workItem from="1599278052093" duration="34381000" />
+      <workItem from="1599378652550" duration="3892000" />
+      <workItem from="1599452961628" duration="599000" />
+      <workItem from="1599462203413" duration="599000" />
+      <workItem from="1599540594221" duration="1299000" />
+      <workItem from="1599564479958" duration="2210000" />
+      <workItem from="1599619564680" duration="604000" />
+      <workItem from="1599649432840" duration="1341000" />
+      <workItem from="1599799644207" duration="1796000" />
+      <workItem from="1599892729163" duration="11786000" />
+      <workItem from="1599971894334" duration="28566000" />
+      <workItem from="1600059743363" duration="4966000" />
+      <workItem from="1600241352315" duration="1218000" />
+      <workItem from="1600493594926" duration="599000" />
+      <workItem from="1600517803037" duration="694000" />
+      <workItem from="1600666805110" duration="3090000" />
+      <workItem from="1600751778169" duration="3252000" />
+      <workItem from="1600833412280" duration="9000" />
+      <workItem from="1600973002544" duration="1534000" />
+      <workItem from="1601006513704" duration="2115000" />
+      <workItem from="1601089935142" duration="27498000" />
+      <workItem from="1601219241427" duration="1830000" />
+      <workItem from="1601269107636" duration="943000" />
+      <workItem from="1601276903988" duration="512000" />
+      <workItem from="1601356239169" duration="394000" />
+      <workItem from="1601356658705" duration="43000" />
+      <workItem from="1601444451081" duration="6415000" />
+      <workItem from="1601529698375" duration="3184000" />
+      <workItem from="1601629290350" duration="3653000" />
+      <workItem from="1601743575479" duration="4560000" />
+      <workItem from="1601817186915" duration="4787000" />
+      <workItem from="1601870978101" duration="4992000" />
+      <workItem from="1601885662039" duration="635000" />
+      <workItem from="1601960922247" duration="643000" />
+      <workItem from="1601988810481" duration="7120000" />
+      <workItem from="1602088618355" duration="3160000" />
+      <workItem from="1602157053182" duration="3230000" />
+      <workItem from="1602219699108" duration="6195000" />
+      <workItem from="1602339779271" duration="49000" />
+      <workItem from="1602358364346" duration="1192000" />
+      <workItem from="1602389936399" duration="1208000" />
+      <workItem from="1602445100498" duration="1342000" />
+      <workItem from="1602476327904" duration="23000" />
+      <workItem from="1602489972498" duration="2038000" />
+      <workItem from="1602494851934" duration="10047000" />
+      <workItem from="1602646899683" duration="605000" />
+      <workItem from="1602736919138" duration="5529000" />
+      <workItem from="1602824654778" duration="9391000" />
+      <workItem from="1602902511885" duration="11471000" />
+      <workItem from="1603000363029" duration="6600000" />
+      <workItem from="1603082519780" duration="4132000" />
+      <workItem from="1603170652145" duration="598000" />
+      <workItem from="1603180444637" duration="599000" />
+      <workItem from="1603251693840" duration="607000" />
+      <workItem from="1603265877562" duration="14616000" />
+      <workItem from="1603340452659" duration="607000" />
+      <workItem from="1603431618640" duration="1886000" />
+      <workItem from="1603909402525" duration="451000" />
+      <workItem from="1603943012176" duration="3469000" />
+      <workItem from="1604078087887" duration="649000" />
+      <workItem from="1604125125206" duration="8658000" />
+      <workItem from="1604426450711" duration="2899000" />
+      <workItem from="1604458971631" duration="10094000" />
+      <workItem from="1604635507191" duration="2231000" />
+      <workItem from="1604660090367" duration="3501000" />
+      <workItem from="1604738533008" duration="5021000" />
+      <workItem from="1604748670782" duration="3605000" />
+      <workItem from="1604896880724" duration="2449000" />
+      <workItem from="1604953545828" duration="2546000" />
+      <workItem from="1604985030088" duration="2854000" />
+      <workItem from="1605011533827" duration="5581000" />
+      <workItem from="1605107679180" duration="2916000" />
+      <workItem from="1605197963905" duration="2605000" />
+      <workItem from="1605237980808" duration="663000" />
+      <workItem from="1605591005100" duration="4920000" />
+      <workItem from="1605691792181" duration="614000" />
+      <workItem from="1605712725165" duration="6028000" />
+      <workItem from="1605764185555" duration="2324000" />
+      <workItem from="1605849052570" duration="593000" />
+      <workItem from="1605940340206" duration="610000" />
+      <workItem from="1606111794466" duration="4947000" />
+      <workItem from="1606215797114" duration="2407000" />
+      <workItem from="1606369747795" duration="1330000" />
+      <workItem from="1606449677355" duration="320000" />
+      <workItem from="1606481642397" duration="100000" />
+      <workItem from="1606555280264" duration="6139000" />
+      <workItem from="1606627810555" duration="5312000" />
+      <workItem from="1606653069910" duration="9219000" />
+      <workItem from="1606799774054" duration="7594000" />
+      <workItem from="1606887217277" duration="1331000" />
+      <workItem from="1606988923952" duration="5965000" />
+      <workItem from="1607092091078" duration="2166000" />
+      <workItem from="1607142645857" duration="600000" />
+      <workItem from="1607236910736" duration="4313000" />
+      <workItem from="1607272614176" duration="605000" />
+      <workItem from="1607313790850" duration="836000" />
+      <workItem from="1607403955164" duration="632000" />
+      <workItem from="1607504093622" duration="7355000" />
+      <workItem from="1607575065317" duration="607000" />
+      <workItem from="1607687811592" duration="2443000" />
+      <workItem from="1607747976087" duration="597000" />
+      <workItem from="1607928734847" duration="8148000" />
+      <workItem from="1608133565230" duration="11491000" />
+      <workItem from="1608235407230" duration="2400000" />
+      <workItem from="1608398282818" duration="4596000" />
+      <workItem from="1608556944707" duration="2455000" />
+      <workItem from="1608620069964" duration="1356000" />
+      <workItem from="1608719239631" duration="72121000" />
     </task>
     <task id="LOCAL-00001" summary="some error not able to file all references">
       <created>1554981400271</created>
@@ -419,101 +996,32 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105579000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1024" height="768" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22912423" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Learn" order="7" />
-      <window_info id="DB Browser" order="8" />
-      <window_info id="Project Explorer" order="9" />
-      <window_info id="Job Explorer" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37306502" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42724457" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2647059" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32662538" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="DB Execution Console" order="13" />
-      <window_info anchor="bottom" id="Console" order="14" />
-      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32956383" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32930514" />
-      <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.16496944" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.3299389" />
-      <window_info anchor="right" id="Codota" order="11" />
-      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.3299389" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22199592" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Learn" order="7" />
-      <window_info id="DB Browser" order="8" />
-      <window_info id="Project Explorer" order="9" />
-      <window_info id="Job Explorer" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34055728" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42724457" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19547658" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32662538" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="DB Execution Console" order="13" />
-      <window_info anchor="bottom" id="Console" order="14" />
-      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32956383" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32930514" />
-      <window_info anchor="right" id="Gradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.16496944" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.3299389" />
-      <window_info anchor="right" id="Codota" order="11" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="Task" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="some error not able to file all references" />
     <MESSAGE value="done some elastic optimization" />
     <MESSAGE value="Check for already present of agg in org string insted of blindly adding agg to each" />
@@ -525,283 +1033,95 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="3" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Leetcode/Solution.java</url>
+          <line>5</line>
+          <properties class="micro.examin.xml2woCsv.Leetcode.Solution" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/axslogic/winnow/utilities/service/Solution3.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/axslogic/winnow/utilities/service/Solution3.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/axslogic/winnow/utilities/service/CityFlo/sol1.java</url>
           <line>10</line>
-          <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/comparePerformance/Solution3.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/comparePerformance/Solution3.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/TestDummy1.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Solution.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Solution.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Try/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="326" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="((TransformerImpl)xform)._accessExternalDTD" custom="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/xml2woCsv$Xml2woCsv.ic" NAME="Xml2woCsv Coverage Results" MODIFIED="1560319559622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>micro.examin.xml2woCsv.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/javax/xml/stream/XMLInputFactory.java" />
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/io/BufferedReader.java" />
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/io/Reader.java" />
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/org/w3c/dom/Element.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Measure.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/xml2woCsv2.java" />
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="298" column="58" selection-start-line="298" selection-start-column="53" selection-end-line="298" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="474" column="11" selection-start-line="474" selection-start-column="11" selection-end-line="474" selection-end-column="11" />
-          <folding>
-            <element signature="e#19327#19328#0" expanded="true" />
-            <element signature="e#19410#19411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/org/w3c/dom/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="189" column="20" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/org/w3c/dom/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="721" column="18" selection-start-line="721" selection-start-column="18" selection-end-line="721" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650">
-          <caret line="2221" column="18" selection-start-line="2221" selection-start-column="18" selection-end-line="2221" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a8a0f1f9-faa6-43c0-b253-d8102b9b7104/database/TESTDB/schema/PUBLIC/table/MEASUREAGGREGATIONFUNCTION">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/4.1.0/d8eb515844076b61da41758ae8d5a75eeb770398/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/ooxml/POIXMLDocumentPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/4.1.0/d8eb515844076b61da41758ae8d5a75eeb770398/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/SortedMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/4.1.0/d8eb515844076b61da41758ae8d5a75eeb770398/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xssf/usermodel/XSSFSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/jre/lib/rt.jar!/jdk/xml/internal/JdkXmlFeatures.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#2509#2510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="168" column="19" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/com/sun/jmx/snmp/ThreadContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="308" column="32" selection-start-line="308" selection-start-column="32" selection-end-line="308" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/MeasureFolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Dimesion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Ideone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="52" column="40" selection-start-line="10" selection-start-column="16" selection-end-line="52" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3500#3501#0" expanded="true" />
-            <element signature="e#3542#3543#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/micro/examin/xml2woCsv/Xml2woCsv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="489" column="79" selection-start-line="489" selection-start-column="79" selection-end-line="489" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5434#5443#0" expanded="true" />
-            <element signature="e#6673#6674#0" expanded="true" />
-            <element signature="e#6715#6716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Bundled Protobuf Distribution</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>xml2woCsv_main|xml2woCsv</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="de.siegmar:fastcsv:1.0.3" type="repository">
+    <properties maven-id="de.siegmar:fastcsv:1.0.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/fastcsv-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
